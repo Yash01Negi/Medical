@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='cover.css')}}">
+    <title>PredicMedic</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cover/">
+
+
+
+
+
+
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/static/favii.ico">
+
+    <meta name="theme-color" content="#712cf9">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body class="d-flex h-100  text-black bg-dark">
+
+    <div class="cover d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+                <h3 class="float-md-start mb-0"><img src="/static/favii.ico">PredicMedic</h3>
+                <nav class="nav nav-masthead justify-content-center float-md-end ">
+                    <a class="nav-link fw-bold text-black py-1 px-0" aria-current="page" href="/">Home</a>
+                    <a class="nav-link fw-bold py-1 px-0 active text-black" href="/learn">Predictions</a>
+                    <a class="nav-link fw-bold py-1 px-0" href="/about">About</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container py-4">
+                <section class="py-5 text-center container">
+                    <div class="row py-lg-5">
+                        <div class="col-lg-6 col-md-8 mx-auto">
+                            <!-- <h1 class="fw-bolder">Album example</h1> -->
+                            <p class="lead text-muted fw-bold">Given below are the four types of diseases and medical
+                                condition, click on the predict button for further examination. </p>
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <div class="container py-4">
+
+                    <div class="p-5 mb-4 bg-light rounded-3">
+                        <div class="container-fluid py-5">
+                            <h1 class="display-5 fw-bold">Stroke</h1>
+                            <p class="col-md-8 fs-4">A stroke, sometimes called a brain attack, occurs when something
+                                blocks blood supply to part of the brain or when a blood vessel in the brain bursts. In
+                                either case, parts of the brain become damaged or die. A stroke can cause lasting brain
+                                damage, long-term disability, or even death.</p>
+                            <button class="btn btn-primary btn-lg" type="button" id="one"
+                                onclick="location.href='/predictS'"><span>Predict</span></button>
+                        </div>
+                    </div>
+                    <div class="p-5 mb-4 bg-light rounded-3">
+                        <div class="container-fluid py-5">
+                            <h1 class="display-5 fw-bold">Heart disease</h1>
+                            <p class="col-md-8 fs-4">A type of disease that affects the heart or blood vessels. The risk
+                                of certain heart diseases may be increased by smoking, high blood pressure, high
+                                cholesterol, unhealthy diet, lack of exercise, and obesity.
+                                The most common heart disease is coronary artery disease (narrow or blocked coronary
+                                arteries), which can lead to chest pain, heart attacks, or stroke. Other heart diseases
+                                include congestive heart failure, heart rhythm problems, congenital heart disease (heart
+                                disease at birth), and endocarditis (inflamed inner layer of the heart). Also called
+                                cardiovascular disease.</p>
+                            <button class="btn btn-primary btn-lg" type="button" id="two" onclick="location.href='/predictD'"><span>Predict</span></button>
+                        </div>
+                    </div>
+
+                    <div class="p-5 mb-4 bg-light rounded-3">
+                        <div class="container-fluid py-5">
+                            <h1 class="display-5 fw-bold">Cirrhosis</h1>
+                            <p class="col-md-8 fs-4">Chronic liver damage from a variety of causes leading to scarring
+                                and liver failure.
+                                Hepatitis and chronic alcohol abuse are frequent causes. Liver damage caused by
+                                cirrhosis can't be undone, but further damage can be limited.
+                                Initially patients may experience fatigue, weakness and weight loss. During later
+                                stages, patients may develop jaundice (yellowing of the skin), gastrointestinal
+                                bleeding, abdominal swelling and confusion.
+                                Treatments focus on the underlying cause. In advanced cases, a liver transplant may be
+                                required.</p>
+                            <button class="btn btn-primary btn-lg" type="button" id="three" onclick="location.href='/predictC'"><span>Predict</span></button>
+                        </div>
+                    </div>
+
+                    <div class="p-5 mb-4 bg-light rounded-3">
+                        <div class="container-fluid py-5">
+                            <h1 class="display-5 fw-bold">Hepatitis</h1>
+                            <p class="col-md-8 fs-4">Hepatitis means inflammation of the liver. The liver is a vital
+                                organ that processes nutrients, filters the blood, and fights infections.
+                                When the liver is inflamed or damaged, its function can be affected. Heavy alcohol use,
+                                toxins, some medications, and certain medical conditions can cause hepatitis.</p>
+                            <button class="btn btn-primary btn-lg" type="button" id="four" onclick="location.href='/predictH'"><span>Predict</span></button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </main>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+            integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
